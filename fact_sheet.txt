@@ -1,0 +1,8 @@
+1. RAG stands for Retrieval-Augmented Generation.
+2. A language model only knows what it saw during training. It does not know your private or new documents.
+3. RAG lets the model look up relevant documents first, then answer using them.
+4. The steps are: split documents into chunks, turn chunks into embeddings (lists of numbers), store them in a vector database.
+5. At question time, the question is also turned into an embedding, and the closest chunks are retrieved.
+6. The retrieved chunks are added to the prompt, and the model writes the answer from them.
+7. RAG does NOT retrain or change the model. It only changes the prompt.
+8. RAG reduces made-up answers (hallucinations) and lets answers cite their sources, but it does not remove them fully.
